@@ -4,11 +4,11 @@ Plugin Name: Custom Price Labels for WooCommerce
 Plugin URI: https://wpfactory.com/item/custom-price-labels-for-woocommerce-plugin/
 Description: Create any custom price label for any WooCommerce product.
 Version: 2.4.3
-Author: Algoritmika Ltd
-Author URI: http://www.wpwham.com
+Author: WP Wham
+Author URI: https://www.wpwham.com
 Text Domain: woocommerce-custom-price-label
 Domain Path: /langs
-Copyright: © 2018 Algoritmika Ltd.
+Copyright: © 2018 WP Wham
 WC tested up to: 3.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
