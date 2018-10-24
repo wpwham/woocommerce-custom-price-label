@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Custom Price Labels for WooCommerce
-Plugin URI: https://wpfactory.com/item/custom-price-labels-for-woocommerce-plugin/
+Plugin URI: https://wpwham.com/products/custom-price-labels-for-woocommerce/
 Description: Create any custom price label for any WooCommerce product.
 Version: 2.4.3
 Author: WP Wham
-Author URI: https://www.wpwham.com
+Author URI: https://wpwham.com
 Text Domain: woocommerce-custom-price-label
 Domain Path: /langs
 Copyright: © 2018 WP Wham
-WC tested up to: 3.4
+WC tested up to: 3.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -117,7 +117,7 @@ final class Woocommerce_Custom_Price_Label {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=custom_price_label' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-custom-price-label.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="' . esc_url( 'https://wpfactory.com/item/custom-price-labels-for-woocommerce-plugin/' ) . '">' .
+			$custom_links[] = '<a href="' . esc_url( 'https://wpwham.com/products/custom-price-labels-for-woocommerce/' ) . '">' .
 				__( 'Unlock all', 'woocommerce-custom-price-label' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );

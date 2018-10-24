@@ -46,7 +46,7 @@ You can also show label for selected **user roles** only, or hide label for sele
 * Drop us a line at [www.wpwham.com](http://www.wpwham.com).
 
 = More =
-* Visit the [Custom Price Labels for WooCommerce plugin page](https://wpfactory.com/item/custom-price-labels-for-woocommerce-plugin/).
+* Visit the [Custom Price Labels for WooCommerce plugin page](https://wpwham.com/products/custom-price-labels-for-woocommerce/).
 
 == Installation ==
 
@@ -58,7 +58,7 @@ You can also show label for selected **user roles** only, or hide label for sele
 
 = What are the differences between free and Pro versions? =
 
-Free vs Pro comparison table is [here](https://wpfactory.com/item/custom-price-labels-for-woocommerce-plugin/#free_vs_pro).
+Free vs Pro comparison table is [here](https://wpwham.com/products/custom-price-labels-for-woocommerce/).
 
 == Screenshots ==
 
