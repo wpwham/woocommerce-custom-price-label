@@ -2,7 +2,7 @@
 Contributors: wpwham
 Tags: woocommerce
 Requires at least: 4.1
-Tested up to: 4.9
+Tested up to: 5.2
 Stable tag: 2.5.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
