@@ -33,7 +33,7 @@ class WC_Custom_Price_Label_Settings_Global extends Alg_WC_Custom_Price_Labels_S
 	 * @todo    all products - instead of the price
 	 * @todo    "show/hide options" and "user roles options" for each label separately (as in per product)
 	 */
-	function get_section_settings() {
+	public static function get_section_settings() {
 		$desc              = apply_filters( 'alg_wc_custom_price_labels', wccpl_get_pro_message(), 'settings' );
 		$custom_attributes = apply_filters( 'alg_wc_custom_price_labels', array( 'readonly' => 'readonly' ), 'settings' );
 		$settings = array(

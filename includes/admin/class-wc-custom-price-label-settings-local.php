@@ -32,7 +32,7 @@ class WC_Custom_Price_Label_Settings_Local extends Alg_WC_Custom_Price_Labels_Se
 	 * @since   2.3.0
 	 * @todo    add "Disable Sections" (same as "Disable Options") with possible values `instead`, `before`, `between`, `after`
 	 */
-	function get_section_settings() {
+	public static function get_section_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Per Product Custom Price Labels Options', 'woocommerce-custom-price-label' ),

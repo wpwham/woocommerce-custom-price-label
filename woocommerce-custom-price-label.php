@@ -96,6 +96,7 @@ final class Woocommerce_Custom_Price_Label {
 			$this->settings['general'] = require_once( 'includes/admin/class-wc-custom-price-label-settings-general.php' );
 			$this->settings['global']  = require_once( 'includes/admin/class-wc-custom-price-label-settings-global.php' );
 			$this->settings['local']   = require_once( 'includes/admin/class-wc-custom-price-label-settings-local.php' );
+			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
 			if ( get_option( 'alg_wc_custom_price_label_version', '' ) !== $this->version ) {
 				add_action( 'admin_init', array( $this, 'version_updated' ) );
 			}
@@ -121,6 +122,59 @@ final class Woocommerce_Custom_Price_Label {
 				__( 'Unlock all', 'woocommerce-custom-price-label' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
+	}
+
+	/**
+	 * add settings to WC status report
+	 *
+	 * @version 2.5.7
+	 * @since   2.5.7
+	 * @author  WP Wham
+	 */
+	public static function add_settings_to_status_report() {
+		#region add_settings_to_status_report
+		$protected_settings = array( 'wpwham_custom_price_label_license' );
+		$settings_general   = WC_Custom_Price_Label_Settings_General::get_section_settings();
+		$settings_global    = WC_Custom_Price_Label_Settings_Global::get_section_settings();
+		$settings_local     = WC_Custom_Price_Label_Settings_Local::get_section_settings();
+		$settings = array_merge(
+			$settings_general, $settings_global, $settings_local
+		);
+		?>
+		<table class="wc_status_table widefat" cellspacing="0">
+			<thead>
+				<tr>
+					<th colspan="3" data-export-label="Custom Price Labels Settings"><h2><?php esc_html_e( 'Custom Price Labels Settings', 'woocommerce-custom-price-label' ); ?></h2></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ( $settings as $setting ): ?>
+				<?php 
+				if ( in_array( $setting['type'], array( 'title', 'sectionend', 'alg_wc_custom_price_labels_dashboard' ) ) ) { 
+					continue;
+				}
+				if ( isset( $setting['title'] ) ) {
+					$title = $setting['title'];
+				} elseif ( isset( $setting['desc'] ) ) {
+					$title = $setting['desc'];
+				} else {
+					$title = $setting['id'];
+				}
+				$value = get_option( $setting['id'] ); 
+				if ( in_array( $setting['id'], $protected_settings ) ) {
+					$value = $value > '' ? '(set)' : 'not set';
+				}
+				?>
+				<tr>
+					<td data-export-label="<?php echo esc_attr( $title ); ?>"><?php esc_html_e( $title, 'woocommerce-custom-price-label' ); ?>:</td>
+					<td class="help">&nbsp;</td>
+					<td><?php echo is_array( $value ) ? print_r( $value, true ) : $value; ?></td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+		<?php
+		#endregion add_settings_to_status_report
 	}
 
 	/**

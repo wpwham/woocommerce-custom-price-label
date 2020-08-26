@@ -130,7 +130,7 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 	 * @version 2.4.1
 	 * @todo    add link to custom roles plugin/tool
 	 */
-	function get_section_settings() {
+	public static function get_section_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Custom Price Labels Options', 'woocommerce-custom-price-label' ),
