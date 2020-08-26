@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Custom Price Labels for WooCommerce\n"
-"POT-Creation-Date: 2018-10-23 20:15-0700\n"
+"POT-Creation-Date: 2020-08-25 20:52-0700\n"
 "PO-Revision-Date: 2018-10-23 20:15-0700\n"
 "Last-Translator: \n"
 "Language-Team: WP Wham <support@wpwham.com>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "X-Poedit-WPHeader: woocommerce-custom-price-label.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -84,7 +84,7 @@ msgid "Status"
 msgstr ""
 
 #: includes/admin/class-wc-custom-price-label-settings-general.php:115
-#: woocommerce-custom-price-label.php:118
+#: woocommerce-custom-price-label.php:119
 msgid "Settings"
 msgstr ""
 
@@ -447,8 +447,12 @@ msgid ""
 "change value."
 msgstr ""
 
-#: woocommerce-custom-price-label.php:121
+#: woocommerce-custom-price-label.php:122
 msgid "Unlock all"
+msgstr ""
+
+#: woocommerce-custom-price-label.php:147
+msgid "Custom Price Labels Settings"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
