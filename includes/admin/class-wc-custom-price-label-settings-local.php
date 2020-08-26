@@ -2,9 +2,10 @@
 /**
  * WooCommerce Custom Price Label - Local Custom Price Labels Section Settings
  *
- * @version 2.4.1
+ * @version 2.5.7
  * @since   2.3.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -28,7 +29,7 @@ class WC_Custom_Price_Label_Settings_Local extends Alg_WC_Custom_Price_Labels_Se
 	/**
 	 * get_section_settings.
 	 *
-	 * @version 2.4.1
+	 * @version 2.5.7
 	 * @since   2.3.0
 	 * @todo    add "Disable Sections" (same as "Disable Options") with possible values `instead`, `before`, `between`, `after`
 	 */

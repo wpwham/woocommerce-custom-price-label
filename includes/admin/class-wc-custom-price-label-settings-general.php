@@ -2,9 +2,10 @@
 /**
  * WooCommerce Custom Price Label - General Section Settings
  *
- * @version 2.4.1
+ * @version 2.5.7
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -127,7 +128,7 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 	/**
 	 * get_section_settings.
 	 *
-	 * @version 2.4.1
+	 * @version 2.5.7
 	 * @todo    add link to custom roles plugin/tool
 	 */
 	public static function get_section_settings() {

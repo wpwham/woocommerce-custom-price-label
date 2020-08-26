@@ -2,9 +2,10 @@
 /**
  * WooCommerce Custom Price Label - Global Custom Price Labels Section Settings
  *
- * @version 2.4.1
+ * @version 2.5.7
  * @since   2.3.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -28,7 +29,7 @@ class WC_Custom_Price_Label_Settings_Global extends Alg_WC_Custom_Price_Labels_S
 	/**
 	 * get_section_settings.
 	 *
-	 * @version 2.4.1
+	 * @version 2.5.7
 	 * @since   2.3.0
 	 * @todo    all products - instead of the price
 	 * @todo    "show/hide options" and "user roles options" for each label separately (as in per product)
