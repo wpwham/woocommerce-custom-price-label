@@ -2,8 +2,8 @@
 Contributors: wpwham
 Tags: woocommerce
 Requires at least: 4.1
-Tested up to: 5.5
-Stable tag: 2.5.8
+Tested up to: 5.6
+Stable tag: 2.5.9
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,8 +71,11 @@ Free vs Pro comparison table is [here](https://wpwham.com/products/custom-price-
 
 == Changelog ==
 
+= 2.5.9 - 2021-01-21 =
+* UPDATE: bump tested versions.
+
 = 2.5.8 - 2020-09-17 =
-* UPDATE: bump tested versions
+* UPDATE: bump tested versions.
 
 = 2.5.7 - 2020-08-25 =
 * UPDATE: display our settings in WC status report.
