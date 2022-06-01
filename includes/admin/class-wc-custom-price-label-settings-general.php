@@ -2,7 +2,7 @@
 /**
  * WooCommerce Custom Price Label - General Section Settings
  *
- * @version 2.5.7
+ * @version 2.5.11
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -128,7 +128,7 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 	/**
 	 * get_section_settings.
 	 *
-	 * @version 2.5.7
+	 * @version 2.5.11
 	 * @todo    add link to custom roles plugin/tool
 	 */
 	public static function get_section_settings() {
@@ -139,9 +139,11 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 				'id'        => 'woocommerce_custom_price_label_options',
 			),
 			array(
-				'title'     => __( 'WooCommerce Custom Price Labels', 'woocommerce-custom-price-label' ),
+				'title'     => __( 'Custom Price Labels for WooCommerce', 'woocommerce-custom-price-label' ),
 				'desc'      => '<strong>' . __( 'Enable plugin', 'woocommerce-custom-price-label' ) . '</strong>',
-				'desc_tip'  => __( 'Create any custom price label for any WooCommerce product.', 'woocommerce-custom-price-label' ),
+				'desc_tip'  => __( 'Create any custom price label for any WooCommerce product.', 'woocommerce-custom-price-label' )
+					. '<br /><a href="https://wpwham.com/documentation/custom-price-labels-for-woocommerce/?utm_source=documentation_link&utm_campaign=free&utm_medium=custom_price_label" target="_blank" class="button">'
+					. __( 'Documentation', 'woocommerce-custom-price-label' ) . '</a>',
 				'id'        => 'woocommerce_custom_price_label_enabled',
 				'default'   => 'yes',
 				'type'      => 'checkbox',
