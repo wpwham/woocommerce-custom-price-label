@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Custom Price Labels for WooCommerce\n"
-"POT-Creation-Date: 2020-08-25 20:52-0700\n"
+"POT-Creation-Date: 2022-05-31 23:27-0700\n"
 "PO-Revision-Date: 2018-10-23 20:15-0700\n"
 "Last-Translator: \n"
 "Language-Team: WP Wham <support@wpwham.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: woocommerce-custom-price-label.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -49,249 +49,254 @@ msgstr ""
 msgid "WooCommerce > Settings > Custom Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:23
+#: includes/admin/class-wc-custom-price-label-settings-general.php:24
 msgid "General"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:82
-#: includes/admin/class-wc-custom-price-label-settings-global.php:24
+#: includes/admin/class-wc-custom-price-label-settings-general.php:83
+#: includes/admin/class-wc-custom-price-label-settings-global.php:25
 msgid "Global Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:83
+#: includes/admin/class-wc-custom-price-label-settings-general.php:84
 msgid "Set price labels for all products globally."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:88
-#: includes/admin/class-wc-custom-price-label-settings-local.php:24
+#: includes/admin/class-wc-custom-price-label-settings-general.php:89
+#: includes/admin/class-wc-custom-price-label-settings-local.php:25
 msgid "Per Product Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:89
+#: includes/admin/class-wc-custom-price-label-settings-general.php:90
 msgid "Set price labels for each product individually."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:106
+#: includes/admin/class-wc-custom-price-label-settings-general.php:107
 msgid "Section"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:107
+#: includes/admin/class-wc-custom-price-label-settings-general.php:108
 msgid "Description"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:108
+#: includes/admin/class-wc-custom-price-label-settings-general.php:109
 msgid "Status"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:115
+#: includes/admin/class-wc-custom-price-label-settings-general.php:116
 #: woocommerce-custom-price-label.php:119
 msgid "Settings"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:119
+#: includes/admin/class-wc-custom-price-label-settings-general.php:120
 msgid "Enabled"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:119
+#: includes/admin/class-wc-custom-price-label-settings-general.php:120
 msgid "Disabled"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:123
+#: includes/admin/class-wc-custom-price-label-settings-general.php:124
 msgid "Dashboard"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:136
+#: includes/admin/class-wc-custom-price-label-settings-general.php:137
 msgid "Custom Price Labels Options"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:141
-msgid "WooCommerce Custom Price Labels"
+#. Plugin Name of the plugin/theme
+#: includes/admin/class-wc-custom-price-label-settings-general.php:142
+msgid "Custom Price Labels for WooCommerce"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:142
+#: includes/admin/class-wc-custom-price-label-settings-general.php:143
 msgid "Enable plugin"
 msgstr ""
 
 #. Description of the plugin/theme
-#: includes/admin/class-wc-custom-price-label-settings-general.php:143
+#: includes/admin/class-wc-custom-price-label-settings-general.php:144
 msgid "Create any custom price label for any WooCommerce product."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:149
+#: includes/admin/class-wc-custom-price-label-settings-general.php:146
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/class-wc-custom-price-label-settings-general.php:152
 msgid "Override global price labels with per product labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:150
-#: includes/admin/class-wc-custom-price-label-settings-local.php:70
+#: includes/admin/class-wc-custom-price-label-settings-general.php:153
+#: includes/admin/class-wc-custom-price-label-settings-local.php:71
 #: includes/wc-custom-price-label-functions.php:65
 msgid "Enable"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:151
+#: includes/admin/class-wc-custom-price-label-settings-general.php:154
 msgid ""
 "If enabled, this will override global price labels with per product labels "
 "(if set). Otherwise labels will be combined (global first)."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:157
+#: includes/admin/class-wc-custom-price-label-settings-general.php:160
 msgid "Search bots"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:158
+#: includes/admin/class-wc-custom-price-label-settings-general.php:161
 msgid "Disable"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-general.php:159
+#: includes/admin/class-wc-custom-price-label-settings-general.php:162
 msgid "Here you can disable custom price labels for search bots."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:41
+#: includes/admin/class-wc-custom-price-label-settings-global.php:42
 msgid "Global Custom Price Labels Options"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:43
+#: includes/admin/class-wc-custom-price-label-settings-global.php:44
 msgid "This section lets you set price labels for all products globally."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:44
+#: includes/admin/class-wc-custom-price-label-settings-global.php:45
 msgid "You can use HTML here."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:48
+#: includes/admin/class-wc-custom-price-label-settings-global.php:49
 msgid "Global Custom Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:49
-#: includes/admin/class-wc-custom-price-label-settings-local.php:45
+#: includes/admin/class-wc-custom-price-label-settings-global.php:50
+#: includes/admin/class-wc-custom-price-label-settings-local.php:46
 msgid "Enable section"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:55
+#: includes/admin/class-wc-custom-price-label-settings-global.php:56
 msgid "Add before the price"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:56
+#: includes/admin/class-wc-custom-price-label-settings-global.php:57
 msgid "Enter text to add before all products prices. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:63
+#: includes/admin/class-wc-custom-price-label-settings-global.php:64
 msgid "Add after the price"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:64
+#: includes/admin/class-wc-custom-price-label-settings-global.php:65
 msgid "Enter text to add after all products prices. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:71
+#: includes/admin/class-wc-custom-price-label-settings-global.php:72
 msgid "Add between regular and sale prices"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:72
+#: includes/admin/class-wc-custom-price-label-settings-global.php:73
 msgid ""
 "Enter text to add between regular and sale prices. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:81
+#: includes/admin/class-wc-custom-price-label-settings-global.php:82
 msgid "Remove from price"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:82
+#: includes/admin/class-wc-custom-price-label-settings-global.php:83
 msgid "Enter text to remove from all products prices. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:91
+#: includes/admin/class-wc-custom-price-label-settings-global.php:92
 msgid "Replace in price"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:92
+#: includes/admin/class-wc-custom-price-label-settings-global.php:93
 msgid "Enter text to replace in all products prices. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:102
+#: includes/admin/class-wc-custom-price-label-settings-global.php:103
 msgid "Enter text to replace with. Leave blank to disable."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:115
+#: includes/admin/class-wc-custom-price-label-settings-global.php:116
 msgid "Visibility Options"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:120
+#: includes/admin/class-wc-custom-price-label-settings-global.php:121
 msgid "Hide on"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:121
+#: includes/admin/class-wc-custom-price-label-settings-global.php:122
 msgid ""
 "If set - will hide global price labels for selected options. Leave empty to "
 "show on all site."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:129
+#: includes/admin/class-wc-custom-price-label-settings-global.php:130
 msgid "Show on"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:130
+#: includes/admin/class-wc-custom-price-label-settings-global.php:131
 msgid ""
 "If set - will show global price labels only for selected options. Leave "
 "empty to show on all site."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:138
+#: includes/admin/class-wc-custom-price-label-settings-global.php:139
 msgid "User roles to hide"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:139
+#: includes/admin/class-wc-custom-price-label-settings-global.php:140
 msgid ""
 "If set - will hide global price labels for selected user roles. Leave empty "
 "to show to all users."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:147
+#: includes/admin/class-wc-custom-price-label-settings-global.php:148
 msgid "User roles to show"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-global.php:148
+#: includes/admin/class-wc-custom-price-label-settings-global.php:149
 msgid ""
 "If set - will show global price labels only for selected user roles. Leave "
 "empty to show to all users."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:38
+#: includes/admin/class-wc-custom-price-label-settings-local.php:39
 msgid "Per Product Custom Price Labels Options"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:40
+#: includes/admin/class-wc-custom-price-label-settings-local.php:41
 msgid ""
 "When enabled, this will add \"Custom Price Labels\" metabox to each "
 "product's edit page."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:44
+#: includes/admin/class-wc-custom-price-label-settings-local.php:45
 msgid "Per Product Custom Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:46
+#: includes/admin/class-wc-custom-price-label-settings-local.php:47
 msgid ""
 "To set labels on per product basis, start editing product, then fill in "
 "\"Custom Price Labels\" metabox."
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:52
+#: includes/admin/class-wc-custom-price-label-settings-local.php:53
 msgid "Disable options"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:64
+#: includes/admin/class-wc-custom-price-label-settings-local.php:65
 msgid "Wrap Per Product Custom Price Labels"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:69
+#: includes/admin/class-wc-custom-price-label-settings-local.php:70
 msgid "Enable/Disable"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:83
+#: includes/admin/class-wc-custom-price-label-settings-local.php:84
 msgid "Prepend"
 msgstr ""
 
-#: includes/admin/class-wc-custom-price-label-settings-local.php:90
+#: includes/admin/class-wc-custom-price-label-settings-local.php:91
 msgid "Append"
 msgstr ""
 
@@ -453,10 +458,6 @@ msgstr ""
 
 #: woocommerce-custom-price-label.php:147
 msgid "Custom Price Labels Settings"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-msgid "Custom Price Labels for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
