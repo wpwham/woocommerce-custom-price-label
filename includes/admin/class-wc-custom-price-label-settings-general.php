@@ -2,7 +2,7 @@
 /**
  * WooCommerce Custom Price Label - General Section Settings
  *
- * @version 2.5.7
+ * @version 2.5.11
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -128,7 +128,7 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 	/**
 	 * get_section_settings.
 	 *
-	 * @version 2.5.7
+	 * @version 2.5.11
 	 * @todo    add link to custom roles plugin/tool
 	 */
 	public static function get_section_settings() {
