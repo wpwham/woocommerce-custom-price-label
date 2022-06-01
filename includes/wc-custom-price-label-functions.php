@@ -224,6 +224,6 @@ if ( ! function_exists( 'wccpl_get_pro_message' ) ) {
 	 * @version 2.4.0
 	 */
 	function wccpl_get_pro_message() {
-		return sprintf( __( 'Get <a href="%s">Custom Price Labels for WooCommerce Pro</a> plugin to change value.', 'woocommerce-custom-price-label' ), 'https://wpwham.com/products/custom-price-labels-for-woocommerce/' );
+		return sprintf( __( 'Get <a href="%s">Custom Price Labels for WooCommerce Pro</a> plugin to change value.', 'woocommerce-custom-price-label' ), 'https://wpwham.com/products/custom-price-labels-for-woocommerce/?utm_source=wccpl_get_pro_message&utm_campaign=free&utm_medium=custom_price_label' );
 	}
 }

@@ -118,7 +118,7 @@ final class Woocommerce_Custom_Price_Label {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=custom_price_label' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-custom-price-label.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="' . esc_url( 'https://wpwham.com/products/custom-price-labels-for-woocommerce/' ) . '">' .
+			$custom_links[] = '<a href="' . esc_url( 'https://wpwham.com/products/custom-price-labels-for-woocommerce/?utm_source=plugins_page&utm_campaign=free&utm_medium=custom_price_label' ) . '">' .
 				__( 'Unlock all', 'woocommerce-custom-price-label' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
