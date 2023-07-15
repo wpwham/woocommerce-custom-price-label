@@ -13,7 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'WC_Custom_Price_Label_Settings_Local' ) ) :
 
 class WC_Custom_Price_Label_Settings_Local extends Alg_WC_Custom_Price_Labels_Settings_Section {
-
+	
+	public $id   = '';
+	public $desc = '';
+	
 	/**
 	 * Constructor.
 	 *

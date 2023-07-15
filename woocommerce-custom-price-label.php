@@ -44,6 +44,8 @@ if ( ! class_exists( 'Woocommerce_Custom_Price_Label' ) ) :
  */
 final class Woocommerce_Custom_Price_Label {
 
+	public $settings = null;
+	
 	/**
 	 * Plugin version.
 	 *
