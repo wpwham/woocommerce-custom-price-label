@@ -2,7 +2,7 @@
 /**
  * WooCommerce Custom Price Label - Local Custom Price Labels Section Settings
  *
- * @version 2.5.7
+ * @version 2.5.12
  * @since   2.3.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -13,7 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'WC_Custom_Price_Label_Settings_Local' ) ) :
 
 class WC_Custom_Price_Label_Settings_Local extends Alg_WC_Custom_Price_Labels_Settings_Section {
-
+	
+	public $id   = '';
+	public $desc = '';
+	
 	/**
 	 * Constructor.
 	 *
