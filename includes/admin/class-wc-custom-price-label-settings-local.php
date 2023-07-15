@@ -2,7 +2,7 @@
 /**
  * WooCommerce Custom Price Label - Local Custom Price Labels Section Settings
  *
- * @version 2.5.7
+ * @version 2.5.12
  * @since   2.3.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham

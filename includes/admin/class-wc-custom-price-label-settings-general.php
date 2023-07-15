@@ -2,7 +2,7 @@
 /**
  * WooCommerce Custom Price Label - General Section Settings
  *
- * @version 2.5.11
+ * @version 2.5.12
  * @since   2.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
