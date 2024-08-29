@@ -3,14 +3,12 @@
 Plugin Name: Custom Price Labels for WooCommerce
 Plugin URI: https://wpwham.com/products/custom-price-labels-for-woocommerce/
 Description: Create any custom price label for any WooCommerce product.
-Version: 2.5.12
+Version: 2.5.13
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-custom-price-label
 Domain Path: /langs
-WC requires at least: 3.0
-WC tested up to: 7.8
-Copyright: © 2018-2023 WP Wham. All rights reserved.
+Copyright: Â© 2018-2024 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -34,13 +32,19 @@ if ( 'woocommerce-custom-price-label.php' === basename( __FILE__ ) ) {
 	) return;
 }
 
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
+
 if ( ! class_exists( 'Woocommerce_Custom_Price_Label' ) ) :
 
 /**
  * Main Woocommerce_Custom_Price_Label Class
  *
  * @class   Woocommerce_Custom_Price_Label
- * @version 2.5.12
+ * @version 2.5.13
  */
 final class Woocommerce_Custom_Price_Label {
 
@@ -52,7 +56,7 @@ final class Woocommerce_Custom_Price_Label {
 	 * @var   string
 	 * @since 2.1.1
 	 */
-	public $version = '2.5.12';
+	public $version = '2.5.13';
 
 	/**
 	 * @var Woocommerce_Custom_Price_Label The single instance of the class
