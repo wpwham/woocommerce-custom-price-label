@@ -87,7 +87,7 @@ final class Woocommerce_Custom_Price_Label {
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'woocommerce-custom-price-label', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -111,6 +111,13 @@ final class Woocommerce_Custom_Price_Label {
 			// Bulk editor tool
 			require_once( 'includes/admin/class-wc-custom-price-label-bulk-editor-tool.php' );
 		}
+	}
+	
+	/**
+	 * @since   2.5.14
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'woocommerce-custom-price-label', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
