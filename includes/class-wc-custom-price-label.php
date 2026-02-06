@@ -178,7 +178,7 @@ class WC_Custom_Price_Label {
 	 */
 	function apply_global_price_labels( $price, $product ) {
 		// Check if global price labels are enabled
-		if ( 'no' === get_option( 'woocommerce_global_price_labels_enabled', 'yes') ) {
+		if ( 'no' === get_option( 'woocommerce_global_price_labels_enabled', 'yes' ) ) {
 			return $price;
 		}
 		// Check Roles
