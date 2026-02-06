@@ -19,7 +19,7 @@ class WC_Custom_Price_Label_Settings_Per_Product {
 	 * @version 2.3.0
 	 */
 	function __construct() {
-		if ( 'yes' === get_option( 'woocommerce_local_price_labels_enabled', 'yes') ) {
+		if ( 'yes' === get_option( 'woocommerce_local_price_labels_enabled', 'yes' ) ) {
 			add_action( 'add_meta_boxes',    array( $this, 'add_price_label_meta_box' ) );
 			add_action( 'save_post_product', array( $this, 'save_custom_price_labels' ), PHP_INT_MAX, 2 );
 		}
