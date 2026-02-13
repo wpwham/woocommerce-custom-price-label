@@ -24,7 +24,10 @@ class WC_Custom_Price_Label_Settings_General extends Alg_WC_Custom_Price_Labels_
 	 */
 	function __construct() {
 		$this->id   = '';
-		$this->desc = __( 'General', 'woocommerce-custom-price-label' );
+		$this->desc = 'General';
+		add_action( 'init', function() {
+			$this->desc = __( 'General', 'woocommerce-custom-price-label' );
+		} );
 		parent::__construct();
 		add_action( 'woocommerce_admin_field_alg_wc_custom_price_labels_dashboard', array( $this, 'output_dashboard' ) );
 		add_action( 'woocommerce_admin_field_alg_wc_custom_price_label_textarea',   array( $this, 'output_custom_textarea' ) );

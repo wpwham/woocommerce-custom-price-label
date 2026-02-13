@@ -20,7 +20,10 @@ class WC_Settings_Custom_Price_Label extends WC_Settings_Page {
 	 */
 	function __construct() {
 		$this->id    = 'custom_price_label';
-		$this->label = __( 'Custom Price Labels', 'woocommerce-custom-price-label' );
+		$this->label = 'Custom Price Labels';
+		add_action( 'init', function() {
+			$this->label = __( 'Custom Price Labels', 'woocommerce-custom-price-label' );
+		} );
 		parent::__construct();
 	}
 

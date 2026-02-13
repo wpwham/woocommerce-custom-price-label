@@ -25,7 +25,10 @@ class WC_Custom_Price_Label_Settings_Global extends Alg_WC_Custom_Price_Labels_S
 	 */
 	function __construct() {
 		$this->id   = 'global_price_labels';
-		$this->desc = __( 'Global Price Labels', 'woocommerce-custom-price-label' );
+		$this->desc = 'Global Price Labels';
+		add_action( 'init', function() {
+			$this->desc = __( 'Global Price Labels', 'woocommerce-custom-price-label' );
+		} );
 		parent::__construct();
 	}
 

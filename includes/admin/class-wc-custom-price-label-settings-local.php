@@ -25,7 +25,10 @@ class WC_Custom_Price_Label_Settings_Local extends Alg_WC_Custom_Price_Labels_Se
 	 */
 	function __construct() {
 		$this->id   = 'local_price_labels';
-		$this->desc = __( 'Per Product Price Labels', 'woocommerce-custom-price-label' );
+		$this->desc = 'Per Product Price Labels';
+		add_action( 'init', function() {
+			$this->desc = __( 'Per Product Price Labels', 'woocommerce-custom-price-label' );
+		} );
 		parent::__construct();
 	}
 
