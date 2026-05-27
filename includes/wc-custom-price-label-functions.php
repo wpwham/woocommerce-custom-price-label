@@ -5,6 +5,8 @@
  * @version 2.5.11
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 if ( ! function_exists( 'alg_get_options_group_name' ) ) {
 	/**
 	 * alg_get_options_group_name.
