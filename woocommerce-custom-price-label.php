@@ -84,40 +84,21 @@ final class Woocommerce_Custom_Price_Label {
 	 *
 	 * @version 2.5.14
 	 */
-	function __construct() {
-
-		// Set up localisation
-		add_action( 'init', array( $this, 'load_localization' ) );
+	public function __construct() {
 
 		// Include required files
-		$this->includes();
+		add_action( 'init', array( $this, 'includes' ) );
 
 		// Admin
 		if ( is_admin() ) {
 			add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
-			// Settings
-			require_once( 'includes/admin/class-wc-custom-price-label-settings-section.php' );
-			$this->settings = array();
-			$this->settings['general'] = require_once( 'includes/admin/class-wc-custom-price-label-settings-general.php' );
-			$this->settings['global']  = require_once( 'includes/admin/class-wc-custom-price-label-settings-global.php' );
-			$this->settings['local']   = require_once( 'includes/admin/class-wc-custom-price-label-settings-local.php' );
-			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
-			if ( get_option( 'alg_wc_custom_price_label_version', '' ) !== $this->version ) {
-				add_action( 'admin_init', array( $this, 'version_updated' ) );
-			}
-			// Per product settings
-			require_once( 'includes/admin/class-wc-custom-price-label-settings-per-product.php' );
-			// Bulk editor tool
-			require_once( 'includes/admin/class-wc-custom-price-label-bulk-editor-tool.php' );
 		}
-	}
-	
-	/**
-	 * @since   2.5.14
-	 */
-	public function load_localization() {
-		load_plugin_textdomain( 'woocommerce-custom-price-label', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+
+		// Updates
+		if ( get_option( 'alg_wc_custom_price_label_version', '' ) !== $this->version ) {
+			add_action( 'admin_init', array( $this, 'version_updated' ) );
+		}
 	}
 
 	/**
@@ -195,11 +176,27 @@ final class Woocommerce_Custom_Price_Label {
 	 *
 	 * @version 2.4.3
 	 */
-	function includes() {
+	public function includes() {
+		// Localization
+		load_plugin_textdomain( 'woocommerce-custom-price-label', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 		// Functions
 		require_once( 'includes/wc-custom-price-label-functions.php' );
 		// Core
 		require_once( 'includes/class-wc-custom-price-label.php' );
+		// Admin
+		if ( is_admin() ) {
+			// Settings
+			require_once( 'includes/admin/class-wc-custom-price-label-settings-section.php' );
+			$this->settings = array();
+			$this->settings['general'] = require_once( 'includes/admin/class-wc-custom-price-label-settings-general.php' );
+			$this->settings['global']  = require_once( 'includes/admin/class-wc-custom-price-label-settings-global.php' );
+			$this->settings['local']   = require_once( 'includes/admin/class-wc-custom-price-label-settings-local.php' );
+			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
+			// Per product settings
+			require_once( 'includes/admin/class-wc-custom-price-label-settings-per-product.php' );
+			// Bulk editor tool
+			require_once( 'includes/admin/class-wc-custom-price-label-bulk-editor-tool.php' );
+		}
 	}
 
 	/**
