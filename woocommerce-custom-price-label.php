@@ -187,6 +187,7 @@ final class Woocommerce_Custom_Price_Label {
 		if ( is_admin() ) {
 			// Settings
 			require_once( 'includes/admin/class-wc-custom-price-label-settings-section.php' );
+			require_once( 'includes/class-wpwham-custom-price-label-review.php' );
 			$this->settings = array();
 			$this->settings['general'] = require_once( 'includes/admin/class-wc-custom-price-label-settings-general.php' );
 			$this->settings['global']  = require_once( 'includes/admin/class-wc-custom-price-label-settings-global.php' );
