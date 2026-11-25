@@ -285,10 +285,10 @@ class WC_Custom_Price_Label {
 	function customize_price( $price, $options_section, $custom_label ) {
 		switch ( $options_section ) {
 			case '':
-				$price = $custom_label;
+				$price = wp_kses_post( $custom_label );
 				break;
 			case '_before':
-				$price = $custom_label . $price;
+				$price = wp_kses_post( $custom_label ) . $price;
 				break;
 			case '_between':
 				$price = apply_filters( 'alg_wc_custom_price_labels', $price, 'per_product_between', array( 'custom_label' => $custom_label ) );

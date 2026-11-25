@@ -86,17 +86,27 @@ class WC_Custom_Price_Label_Bulk_Editor {
 
 		// Action
 		if ( isset( $_POST['alg_custom_price_label_bulk_editor_submit'] ) ) {
-			foreach ( $products as $product_id => $product_title ) {
-				foreach ( alg_get_options_sections() as $options_section => $options_section_title ) {
-					foreach ( alg_get_options_section_variations_main() as $options_section_variation => $options_section_variation_title ) {
-						$option_name = alg_get_options_group_name() . $options_section . $options_section_variation;
-						if ( '_text' === $options_section_variation ) {
-							update_post_meta( $product_id, '_' . $option_name,  $_POST[ $option_name . '_' . $product_id ] );
-						} else {
-							if ( isset( $_POST[ $option_name . '_' . $product_id ] ) ) {
-								update_post_meta( $product_id, '_' . $option_name,  $_POST[ $option_name . '_' . $product_id ] );
+			check_admin_referer( 'wpwham_custom_price_label_bulk_editor' );
+			if ( current_user_can( 'manage_options' ) ) {
+				foreach ( $products as $product_id => $product_title ) {
+					foreach ( alg_get_options_sections() as $options_section => $options_section_title ) {
+						foreach ( alg_get_options_section_variations_main() as $options_section_variation => $options_section_variation_title ) {
+							$option_name = alg_get_options_group_name() . $options_section . $options_section_variation;
+							$field_name  = $option_name . '_' . $product_id;
+							if ( '_text' === $options_section_variation ) {
+								if ( isset( $_POST[ $field_name ] ) ) {
+									update_post_meta( $product_id, '_' . $option_name, wp_kses_post( wp_unslash( $_POST[ $field_name ] ) ) );
+								}
 							} else {
-								update_post_meta( $product_id, '_' . $option_name,  'off' );
+								$text_field_name = alg_get_options_group_name() . $options_section . '_text_' . $product_id;
+								if ( ! isset( $_POST[ $text_field_name ] ) ) {
+									continue;
+								}
+								if ( isset( $_POST[ $field_name ] ) ) {
+									update_post_meta( $product_id, '_' . $option_name, $_POST[ $field_name ] );
+								} else {
+									update_post_meta( $product_id, '_' . $option_name, 'off' );
+								}
 							}
 						}
 					}
@@ -109,6 +119,7 @@ class WC_Custom_Price_Label_Bulk_Editor {
 		$html .= '<div class="wrap">';
 		$html .= '<h1>' . __( 'Custom Price Label Bulk Editor Tool', 'woocommerce-custom-price-label' ) . '</h1>';
 		$html .= '<form method="post" action="' . $_SERVER['REQUEST_URI'] . '">';
+		$html .= wp_nonce_field( 'wpwham_custom_price_label_bulk_editor', '_wpnonce', true, false );
 		$table_data = array();
 		$table_header = array( __( 'ID', 'woocommerce-custom-price-label' ), __( 'Title', 'woocommerce-custom-price-label' ) );
 		foreach ( alg_get_options_sections() as $options_section => $options_section_title ) {
